@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- jsPDF CDN for PDF Export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Left Side for Image and Contact Info -->
+        <div class="left-side">
+            <div class="profile-image">
+                <img id="profile-image" src="your-image.jpg" alt="Profile Picture">
+            </div>
+            <h1 contenteditable="true" id="name">Areeba Khan</h1>
+            <p contenteditable="true" id="title">Front-End Developer</p>
+            <p>Email: <span contenteditable="true" id="email">gulariba713@example.com</span></p>
+            <p>Phone: <span contenteditable="true" id="phone">(931) 012-08717</span></p>
+        </div>
+
+        <!-- Right Side for Personal Info, Experience, and Skills -->
+        <div class="right-side">
+            <section class="profile">
+                <h2>Profile</h2>
+                <p contenteditable="true" id="profile-info"><i>A motivated front-end developer with expertise in creating responsive web applications using TypeScript, HTML, CSS, and modern JavaScript frameworks. Passionate about clean code and user-friendly design.</i></p>
+            </section>
+
+            <section class="experience">
+                <h2>Experience</h2>
+                <div class="job">
+                    <h3 contenteditable="true" id="job-title">Front-End Developer - XYZ Corp</h3>
+                    <p contenteditable="true" id="job-date"><i>Jan 2021 - Present</i></p>
+                    <ul>
+                        <li contenteditable="true" id="job-task1">Developed web applications using TypeScript, React, and CSS.</li>
+                        <li contenteditable="true" id="job-task2">Improved website performance by 30% through optimization techniques.</li>
+                        <li contenteditable="true" id="job-task3">Collaborated with backend developers to integrate RESTful APIs.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li contenteditable="true" id="skill1">TypeScript, JavaScript, HTML5, CSS3</li>
+                    <li contenteditable="true" id="skill2">React, Angular</li>
+                    <li contenteditable="true" id="skill3">Version Control (Git)</li>
+                    <li contenteditable="true" id="skill4">Responsive Design</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- Button to Download PDF -->
+    <button id="download-pdf" style="margin: 20px; padding: 10px; background-color: #00509E; color: white; border: none; border-radius: 5px; cursor: pointer;">Download as PDF</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
